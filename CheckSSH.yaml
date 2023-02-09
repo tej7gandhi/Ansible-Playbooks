@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+    - name: stopping ssh service
+      service:
+        name: ssh
+        state: stopped
+        enabled: no
+  become: yes
